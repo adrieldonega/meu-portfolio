@@ -1,6 +1,7 @@
 /* ESTILO GERAL */
 
-@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Fim Google fonts */
 
 /* Bootstrap Icons */
@@ -10,9 +11,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Playwrite DE Grund", cursive;
-  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
 body {
@@ -72,7 +72,7 @@ header {
   padding: 30px 4%;
 }
 
-header > .interface {
+header .interface {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -393,19 +393,24 @@ footer .line-footer p a {
 /*______________________________________________________----RESPONSIVO----___________________________________________________ */
 /*___________________________________________________________________________________________________________________________ */
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1030px) {
   /*________________________________________________----RESPONSIVO CLASSES GERAIS----__________________________________________ */
   .flex {
     flex-direction: column;
   }
 
   section.topo-site .txt-topo-site h1 {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   h2.titulo {
-    font-size: 25px;
+    font-size: 60px;
     line-height: 20px;
+  }
+
+  p {
+    font-size: 35px;
+    font-weight: 400;
   }
 
   /*________________________________________________----RESPONSIVO CABEÇALHO----__________________________________________ */
@@ -413,6 +418,14 @@ footer .line-footer p a {
   .btn-contato {
     display: none;
   }
+
+  header img{
+
+
+    justify-items: center;
+  }
+ 
+
 
   /*________________________________________________----RESPONSIVO TOPO-SITE----__________________________________________ */
   section.topo-site {
@@ -427,13 +440,13 @@ footer .line-footer p a {
     font-size: 30%;
   }
 
-  .img-topo-site img {
+  /*.img-topo-site img {
     width: 100%;
     height: auto;
     max-width: 250%;
     margin-bottom: 30px;
     justify-content: center;
-  }
+  } */
 
   /*________________________________________________----RESPONSIVO EXPERIENCIAS----__________________________________________ */
 
@@ -450,23 +463,39 @@ footer .line-footer p a {
     text-align: center;
   }
 
+  .experiencia .experiencia-box h3 {
+    font-size: 60px;
+    font-weight: bolder;
+    margin: 15px 0;
+  }
+
+  .experiencia .experiencia-box h4{
+    font-size: 45px;
+    
+  }
   /*________________________________________________----RESPONSIVO SOBRE----__________________________________________ */
 
   section.sobre {
     padding: 80px 8%;
   }
 
+
+  section.sobre .txt-sobre h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
   .sobre h2 span {
     display: block;
     line-height: 60px;
   }
 
-  .img-sobre img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 100%;
+  .sobre .img-sobre img {
+    width: 800px;
+    height: 800px;
+    border-radius: 30%;
+    margin-right: 20px;
   }
+
 
   .sobre .txt-sobre h2 {
     font-size: 34px;
@@ -484,6 +513,8 @@ footer .line-footer p a {
   }
 
   section.portfolio .flex {
+    align-items: center;
+    height: auto;
     gap: 60px;
   }
 
