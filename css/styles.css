@@ -204,7 +204,7 @@ span{
     display: grid;    
     gap: 1.2rem;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 900px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -384,17 +384,14 @@ footer{
 
 .change .bar1{
     transform: translate(0, 0.65rem) rotate(-45deg);
-
 }
 
 .change .bar2{
     opacity: 0;
-
 }
 
 .change .bar3{
     transform: translate(0, -0.65rem) rotate(45deg);
-
 }
 /* ======= Menu Hamburguer ==== */
 
@@ -416,6 +413,8 @@ footer{
         font-size: 1.2rem;
         margin: 0.5rem 0;
     }
+
+    
 
     section{
         padding: 6rem 2.5rem;
@@ -457,7 +456,7 @@ footer{
         font-size: 1rem;
         text-align: center;
         margin: auto 20px;       
-    }       
+    }
 }
 
 /* SMALL (SM): SMARTPHONE (Landscape) */
@@ -469,6 +468,18 @@ footer{
 
     .services-box{
         width: 70%;
+    }
+}
+
+@media (max-width: 768px){
+    .portfolio-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .portfolio-box{
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -513,6 +524,8 @@ footer{
     form .input-box input{
         width: 49%;
     }
+
+    
 }
 
 /* Large (lg): Notebook */
