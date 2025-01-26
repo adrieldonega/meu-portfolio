@@ -136,7 +136,7 @@ span{
 }
 
 .services h2,
-.portfolio h2,
+.certificado h2,
 .contact h2{
     font-size: 2.2rem;
     margin-bottom: 1rem;
@@ -186,6 +186,7 @@ span{
     letter-spacing: 0.1rem;
     display: -webkit-box;
     -webkit-line-clamp: 4;
+    line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -196,11 +197,11 @@ span{
 }
 
 
-.portfolio{
+.certificado{
     background-color: var(--bg-color-02);
 }
 
-.portfolio-container{
+.certificado-container{
     display: grid;    
     gap: 1.2rem;
     grid-template-columns: repeat(3, 1fr);
@@ -208,7 +209,7 @@ span{
     margin: 0 auto;
 }
 
-.portfolio-box{
+.certificado-box{
     position: relative;
     border-radius: 0.6rem;
     box-shadow: 0 0 0.6rem var(--bg-color-01);
@@ -218,7 +219,7 @@ span{
     align-items: center;
 }
 
-.portfolio-box img{
+.certificado-box img{
      width: 100%;
      height: auto;
      max-width: 300px;
@@ -229,11 +230,11 @@ span{
 
 
 
-.portfolio-box img:hover{
+.certificado-box img:hover{
     transform: scale(1.1);
 }
 
-.portfolio-box .portfolio-layer{
+.certificado-box .certificado-layer{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -250,20 +251,20 @@ span{
     transition: 0.5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer{
+.certificado-box:hover .certificado-layer{
     transform: translateY(0);
 
 }
 
-.portfolio-layer h4{
+.certificado-layer h4{
     font-size: 1rem;
 }
 
-.portfolio-layer p{
+.certificado-layer p{
     margin: 0.2rem 0 0.5rem;
 }
 
-.portfolio-layer a{
+.certificado-layer a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -273,7 +274,7 @@ span{
     border-radius: 50%;
 }
 
-.portfolio-layer a i{
+.certificado-layer a i{
     font-size: 1.2rem;
     color: var(--bg-color-02);
 }
@@ -472,12 +473,12 @@ footer{
 }
 
 @media (max-width: 768px){
-    .portfolio-container{
+    .certificado-container{
         display: flex;
         flex-direction: column;
         gap: 1.25rem;
     }
-    .portfolio-box{
+    .certificado-box{
         width: 100%;
         height: 100%;
     }
@@ -517,7 +518,7 @@ footer{
         margin-bottom: 2rem;
     }
 
-    .portfolio-container{
+    .certificado-container{
         grid-template-columns: auto auto;
     }
 
@@ -536,7 +537,7 @@ footer{
         gap: 1.2rem;
     }
 
-    .portfolio-container{
+    .certificado-container{
         grid-template-columns: auto auto auto;
     }
 }
